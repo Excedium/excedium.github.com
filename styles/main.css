@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 1rem;
-    color: cadetblue;
+    color: skyblue;
 }
 
 h2 {
@@ -43,5 +43,4 @@ header img {
 footer {
     clear:both;
     font-size: .85rem;
-    background-color: indianred;
 }
