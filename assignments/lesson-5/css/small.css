@@ -1,0 +1,33 @@
+
+
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica;
+}
+
+header, nav, main, footer
+  max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {}
+header h1 {}
+header img {}
+header .subheading {}
+
+nav {}
+nav button {}
+nav ul {}
+nav ul li {}
+nav ul li a {}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+
+footer {}
