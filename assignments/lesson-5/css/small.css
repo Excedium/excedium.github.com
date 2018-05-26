@@ -9,16 +9,12 @@ body {
 }
 
 header, nav, main, footer
-  max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
-}
+  max-width: 600px; }
 
-header {
-        width="200"
-    
-        }
-header h1 { font-size: 40px}
-header img {}
-header .subheading {}
+header {            }
+header h1 { font-size: 40px; }
+header img { width=200; }
+header .subheading { font-size: 20px; }
 
 nav {}
 nav button {}
