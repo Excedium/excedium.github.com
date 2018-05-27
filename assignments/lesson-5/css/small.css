@@ -36,6 +36,6 @@ nav ul li a:hover {background-color: #111;}
 main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img {width: auto }
+main figure img {width: 100% }
 
 footer {}
