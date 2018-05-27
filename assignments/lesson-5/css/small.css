@@ -5,7 +5,8 @@
 
 body {
   font-size: 16px;
-  font-family: "Lucida Sans", sans-serif;
+  padding: 0;    
+  font-family: arial, helvetica, sans-serif;
 }
 
 header, nav, main, footer
@@ -13,20 +14,28 @@ header, nav, main, footer
 
 header {            }
 header h1 { font-size: 40px; }
-header img { width=200; }
+header img { width=100%; }
 header .subheading { font-size: 20px; }
 
 nav {}
 nav button {}
-nav ul {}
-nav ul li {}
-nav ul li a {}
+nav ul {list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;}
+nav ul li {float: left;}
+nav ul li a {display: block;
+             color: white;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;}
 nav ul li.active a {}
-nav ul li a:hover {}
+nav ul li a:hover {background-color: #111;}
 
 main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
+main figure img {width: auto }
 
 footer {}
