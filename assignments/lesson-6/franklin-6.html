@@ -113,7 +113,11 @@
       <p></p>
       </section>
       
-      <p>&copy;<script src="currentdate.js"></script> &#9675; All rights reserved</p>      
+      <script type="application/javascript" src="currentdate.js"></script>
+      <p>&copy;<span id="date-element"/> &#9675; All rights reserved</p>
+      <script type="application/javascript">
+       showDate(document.getElementById('date-element'));
+      </script>
       
   </footer>
 

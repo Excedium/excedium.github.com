@@ -1,2 +1,3 @@
-var d = new Date(day, ",", month, year)
-document.getElementById("demo").innerHTML = d;
+function showDate(element) {
+  element.text = new Date().toString();
+}
