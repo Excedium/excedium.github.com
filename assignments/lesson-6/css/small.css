@@ -1,0 +1,55 @@
+
+
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: center;    
+}
+
+body {
+  font-size: 16px;
+  padding: 0;    
+  font-family: 'Open Sans', sans-serif;
+      }
+
+header, nav, main, footer
+  { max-width: 600px; }
+
+header {            }
+header h1 { font-size: 40px; }
+header img { width: 100%; }
+header .subheading { font-size: 20px; }
+
+nav {}
+nav button {}
+nav ul {list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;}
+nav ul li {float: left;}
+nav ul li a {display: block;
+             color: white;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;}
+nav ul li.active a {}
+nav ul li a:hover {background-color: #111;}
+
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img {}
+
+footer {display: block;
+             color: white;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+             background-color: gray;}
