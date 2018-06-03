@@ -26,21 +26,50 @@ header h1 { font-size: 40px; }
 header img { width: 100%; }
 header .subheading { font-size: 20px; }
 
-nav {}
-nav button {}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+nav {
+    background-color: #ccc;
+    font-family: Verdana, sans-serif;
+    }
+
 nav ul {list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #333;}
-nav ul li {float: left;}
-nav ul li a {display: block;
-             color: white;
-             text-align: center;
-             padding: 14px 16px;
-             text-decoration: none;}
-nav ul li.active a {}
-nav ul li a:hover {background-color: #111;}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2); color: #fff;
+}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.4;}
+
+nav ul.hide {display: none;}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section.forecast {display: none;}
 
 main {}
 main h2 {}
