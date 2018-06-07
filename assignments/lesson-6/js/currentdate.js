@@ -20,7 +20,7 @@ function fullYear() {
 
 function monthName() {
 	var d = new Date();
-       var months = ["January", "February", "March", "April", "May", "June", "July", "August", “September", "October", "November", "December"];
+       var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
        document.getElementById("monthname").innerHTML = months[d.getMonth()];
 }
 
