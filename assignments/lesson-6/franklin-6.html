@@ -119,11 +119,15 @@
       </section>
       
       <script src="js/currentdate.js"></script>
-      <p>&copy;<span id="date-element"></span> &#9675; All rights reserved</p>
+            <p>&copy; <span id="dayname"></span>, <span id="numberday"></span> <span id="monthname"></span> <span id="year"></span> &#9675; All rights reserved</p>
       <script>
-       showDate(document.getElementById('date-element'));
+        dayName()
+        fullYear()
+        monthName()
+        numberDay()
       </script>
+
   </footer>
-<script src="js/hamburger.js"></script>
+        <script src="js/hamburger.js"></script>
 </body>
 </html>
