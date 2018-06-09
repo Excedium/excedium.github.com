@@ -5,7 +5,7 @@ function doInputOutput()
     var s = get("speed").value;
     var temp = (h+l)/2
     var f = windChill(temp, speed);
-    document.getElementById('output').innerHTML = Math.round(f * 100)/100 + " Fahrenheit";
+    document.getElementById("output").innerHTML = Math.round(f * 100)/100 + " Fahrenheit";
 }
 
 function windChill(t, s)
