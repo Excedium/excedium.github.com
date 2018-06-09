@@ -1,12 +1,24 @@
 @media only screen and (min-width: 64em) {
     
-   nav button { display:none; }
+    .desc:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
     
-    nav ul.hide {display: block;}
+    img:hover {box-shadow: 5px 5px 10px gray;}
+    
+    .photos {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        grid-row-gap: 1em;        
+    }
+    
+    nav button { display:none; }
+    
+    nav ul.hide {display: inline-flex;}
     
     nav ul {margin-left: 2%}
     
-    nav ul li {float: left;}
+    nav ul li { }
     
     nav ul li a {
         border: none;
@@ -15,5 +27,5 @@
     } 
     
 
-section.forecast { visibility: visible;}
+section.forecast { display: inline flex;}
 }

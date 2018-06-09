@@ -19,11 +19,11 @@ body {
       }
 
 header, nav, main, footer
-  { max-width: 600px; }
+  { max-width: 658px; }
 
 header {            }
 header h1 { font-size: 40px; }
-header img { width: 100%; }
+header img { width: 50%; }
 header .subheading { font-size: 20px; }
 
 nav button {
@@ -45,18 +45,16 @@ nav ul {list-style-type: none;
             overflow: hidden;
             background-color: #333;}
 
-nav ul li.high {display: inline}
-
-nav ul li.low {display: inline}
-
-nav ul li.speed {display: inline}
+.hide { display: inline-flex;
+        flex-direction: row;
+}
 
 nav ul li a {
-    display: block;
+    display: inline-flex ;
     text-align: center;
     padding: .8rem 2%;
     text-decoration: none;
-    color: #000;
+    color: white;
     border-top: 1px solid rgba(0,0,0,0.3)
 }
 
@@ -85,10 +83,19 @@ main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure.hero {width: 100%; margin: 0;}
 main figure.hero img {width: 100%;}
+main figure.weathericon img {width: 100%;}
+main figure.plane img {width: 100%;}
 
-footer {display: block;
-             color: white;
-             text-align: center;
-             padding: 14px 16px;
-             text-decoration: none;
-             background-color: gray;}
+.photos {
+    display: grid;
+}
+
+footer {
+        display: inline-flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    background-color: gray;
+}
