@@ -12,8 +12,8 @@
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
-        <script type="text/javascript" src="js/currentdate.js"></script>
-        <script type="text/javascript" src="js/hamburger.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/hamburger.js"></script>
 </head>
 <body>
 
@@ -38,7 +38,7 @@
       
   <main>
   <figure class="hero">
-  	<img src="images/herofigure-default.jpeg" sizes="50vw" 
+  	<img src="images/herofigure-default.jpeg" alt="scenery" sizes="50vw" 
          srcset="images/herofigure-small.jpeg 342w, 
                  images/herofigure-medium.jpeg 684w, 
                  images/herofigure-large.jpeg 1028w"
@@ -49,10 +49,10 @@
       <h2>Today's Weather</h2>
       <ul>
         <li>Summary: Sunny</li>
-        <li>High: <a id="high">90</a>&deg; </li>
-        <li>Low: <a id="low">66</a>&deg; </li>
+        <li>High: <span id="high">90</span>&deg; </li>
+        <li>Low: <span id="low">66</span>&deg; </li>
         <li>Chance of Precipatation: 0%</li>
-        <li>Wind: <a id="speed">5</a> mph from the South West</li>
+        <li>Wind: <span id="speed">5</span> mph from the South West</li>
       </ul>
       
       <section class="forecast">     
@@ -120,16 +120,15 @@
       </section>
       
             <p>&copy; <span id="dayname"></span>, <span id="numberday"></span> <span id="monthname"></span> <span id="year"></span> &#9675; All rights reserved</p>
-            <p>Today's Windchill Factor is <span id="output"></span></p>
+      <p>Wind Chill Factor is <span id="output"></span>&deg; Fahrenheit for today</p>
     </footer>
-        <script type="text/javascript" src="js/currentdate.js"></script>
-        <script type="text/javascript" src="js/hamburger.js"></script>
-        <script type="text/javascript" src="js/windchill.js"></script>
-            <script type="text/javascript">dayName();</script>
-            <script type="text/javascript">fullYear();</script>
-            <script type="text/javascript">monthName();</script>
-            <script type="text/javascript">numberDay();</script>
-            <script type="text/javascript">doInputOutput();</script>
-        
+        <script src="js/currentdate.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/windchill.js"></script>
+            <script>dayName();</script>
+            <script>fullYear();</script>
+            <script>monthName();</script>
+            <script>numberDay();</script>
+            <script>doInputOutput();</script>        
 </body>
 </html>

@@ -45,6 +45,12 @@ nav ul {list-style-type: none;
             overflow: hidden;
             background-color: #333;}
 
+nav ul li.high {display: inline}
+
+nav ul li.low {display: inline}
+
+nav ul li.speed {display: inline}
+
 nav ul li a {
     display: block;
     text-align: center;
