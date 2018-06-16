@@ -13,15 +13,89 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
         <script src="js/currentdate.js"></script>
+        <script src="js/rating.js"></script>
         <script src="js/hamburger.js"></script>
 </head>
     
     
- <body>   
-    
+ <body>
+  <header>
+     <h1>Ahead of the Storm</h1>
+  <h2>Don't Just Weather the Weather</h2>
+  </header>
 
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="flexItem"><a href="#">Home</a></li>
+    	<li class="flexItem"><a href="#">Franklin</a></li>
+    	<li class="flexItem"><a href="#">Greenville</a></li>
+    	<li class="flexItem"><a href="#">Springfield</a></li>
+    	<li class="flexItem"><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="flexItem"><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+     <br><br><br><br>
     
+     
+     
+     <main>
+         
+         <h2>Report a Storm in Your Area with this Form</h2>
+         <br>
+         <form method="get" action="thanks.html">
+           
+             
+    <label class="top">First name*<br>
+            <input type="text" name="firstname" required></label><br><br>
+    <label class="top">Last name*<br>
+        <input type="text" name="lastname" required></label><br><br>
+    <label class="top">E-Mail<br>
+            <input type="email" name="email" placeholder="anyone@gmail.com"></label><br><br>
+    <label class="top">Phone number*<br>
+            <input type="tel" name="phone" placeholder="1234567891"></label><br><br>
+    <label class="top">Zip code*<br>
+            <input type="number" name="zip" required></label><br><br>
+    <label class="top">Storm Date:<br>
+            <input type="date" name="date"  required></label><br><br>
+    <label class="top">Storm type:<br>
+             <input list="storm" name="storms" required>
+             <datalist id="storm">
+                 <option value="Flash Flood"></option>
+                 <option value="Hail"></option>
+                 <option value="Hurricane"></option>
+                 <option value="Thunderstorm"></option>
+                 <option value="Tornado"></option>
+             </datalist></label><br><br>
+    Storm severity:<br>
+    <label for="rating">Rating (1 to 10)</label>
+             <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br><br>
+    Storm Region:<br>
+        <select>
+            <option value="region" disabled selected>Select Region...</option>
+            <option value="franklin">Franklin</option>
+            <option value="greenville">Greenville</option>
+            <option value="springfield">Springfield</option>
+        </select><br><br>
+    User in-danger level:<br>
+            <label><input type="radio" name="level" value="yes"> Yes</label><br>
+            <label><input type="radio" name="level" value="maybe"> Maybe</label><br>
+            <label><input type="radio" name="level" value="no"> No</label><br><br>
+             
+             
+    <label class="top">Additional information:<br>
+             <textarea name="message" rows="10" cols="30"></textarea></label>    
+             
     
+    <br><br>
+    <input type="submit" value="Submit" class="submitBtn">
+              
+
+        </form> 
+     
+     </main>
+     <br><br>
     <footer class="footercontainer">
       <section>
       <h3>Address</h3>
