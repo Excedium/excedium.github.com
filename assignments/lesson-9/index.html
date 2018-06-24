@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Weather Map</title>
+    <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
+
+  </head>
+
+  <body>
+
+      <header><img src="images/sun-logo.jpg" alt="Sun Logo">
+  <h1>Ahead of the Storm</h1>
+  <h2>Don't Just Weather the Weather</h2>
+ 
+
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="flexItem"><a href="index.html">Home</a></li>
+    	<li class="flexItem"><a href="franklin.html">Franklin</a></li>
+    	<li class="flexItem"><a href="#">Greenville</a></li>
+    	<li class="flexItem"><a href="#">Springfield</a></li>
+    	<li class="flexItem"><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="flexItem"><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+          <p>For Live Weather Updates, visit each Towns respective page.</p>
+
+      </header>
+
+      <section>
+
+      </section>
+      
+      <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+        
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+        
+    request.onload = function() {
+        var townData = request.response;
+        populateHeader(townData);
+        showData(townData);
+    }
+    
+    function populateHeader(jsonObj) {
+        var myH1 = document.createElement('h1');
+        myH1.textContent = "Towns";
+        header.appendChild(myH1);
+
+    
+    }
+          
+        function showData(jsonObj) {
+  var town = jsonObj['towns'];
+      
+  for (var i = 0; i < town.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+
+    myH2.textContent = town[i].name;
+    myPara1.textContent = 'Motto: ' + town[i].motto;
+    myPara2.textContent = 'Year Founded: ' + town[i].yearFounded;
+    myPara3.textContent = 'Population: ' + town[i].currentPopulation;
+    myPara4.textContent = 'Annual Rainfall: ' + town[i].averageRainfall;
+      
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+    
+
+    section.appendChild(myArticle);    
+    
+    }
+
+    
+  }
+      </script>
+    
+    
+    <footer class="footercontainer">
+      <section>
+      <h3>Address</h3>
+      <p>Main St</p>
+      <p>New York, NY 10001</p>
+      </section>
+      
+      <section>
+      <h3>Phone</h3>
+      <p>(999)-999-9999</p>
+      <p></p>
+      </section>
+      
+      <section>
+      <h3>Email</h3>
+      <p>anyone@gmail.com</p>
+      </section>
+      
+      
+            <p>&copy; <span id="dayname"></span>, <span id="numberday"></span> <span id="monthname"></span> <span id="year"></span> &#9675; All rights reserved</p>
+      <p>Wind Chill Factor is <span id="output"></span>&deg; Fahrenheit for today</p>
+    </footer>
+        <script src="js/currentdate.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/windchill.js"></script>
+            <script>dayName();</script>
+            <script>fullYear();</script>
+            <script>monthName();</script>
+            <script>numberDay();</script>
+            <script>doInputOutput();</script>        
+    </body>
+    
+</html>
