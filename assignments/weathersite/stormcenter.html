@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="center">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Storm Center</title>
+<head includefile="head.html">
     
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" href="css/medium.css">
-        <link rel="stylesheet" href="css/large.css">
-        
 </head>
     
     
  <body>
-  <header>
-     <h1>Ahead of the Storm</h1>
-  <h2>Don't Just Weather the Weather</h2>
+  <header includefile="header.html">
+   
   </header>
 
   <nav class="clearfix">
@@ -27,13 +15,13 @@
     <ul id="primaryNav" class="hide">
     	<li class="flexItem"><a href="index.html">Home</a></li>
     	<li class="flexItem"><a href="franklin.html">Franklin</a></li>
-    	<li class="flexItem"><a href="#">Greenville</a></li>
-    	<li class="flexItem"><a href="#">Springfield</a></li>
+    	<li class="flexItem"><a href="greenville.html">Greenville</a></li>
+    	<li class="flexItem"><a href="springfield.html">Springfield</a></li>
     	<li class="flexItem"><a href="stormcenter.html" class="current">Storm Center</a></li>
     	<li class="flexItem"><a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
-     <br><br><br><br>
+     
     
      
      
@@ -94,28 +82,9 @@
      
      </main>
      <br><br>
-    <footer class="footercontainer">
-      <section>
-      <h3>Address</h3>
-      <p>Main St</p>
-      <p>New York, NY 10001</p>
-      </section>
-      
-      <section>
-      <h3>Phone</h3>
-      <p>(999)-999-9999</p>
-      <p></p>
-      </section>
-      
-      <section>
-      <h3>Email</h3>
-      <p>anyone@gmail.com</p>
-      <p></p>
-      </section>
-      
-            <p>&copy; <span id="dayname"></span>, <span id="numberday"></span> <span id="monthname"></span> <span id="year"></span> &#9675; All rights reserved</p>
-      <p>Wind Chill Factor is <span id="output"></span>&deg; Fahrenheit for today</p>
-    </footer>
+    <footer includefile="footer.html"></footer>
+     
+        <script src="js/include.js"></script>
         <script src="js/currentdate.js"></script>
         <script src="js/hamburger.js"></script>
         <script src="js/windchill.js"></script>

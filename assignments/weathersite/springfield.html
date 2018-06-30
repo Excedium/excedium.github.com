@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head includefile="head.html">
+    
+    </head>
+  <body>
+
+      <header includefile="header.html">
+ </header>
+
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="flexItem"><a href="index.html">Home</a></li>
+    	<li class="flexItem"><a href="franklin.html">Franklin</a></li>
+    	<li class="flexItem"><a href="greenville.html">Greenville</a></li>
+    	<li class="flexItem"><a href="springfield.html"  class="current">Springfield</a></li>
+    	<li class="flexItem"><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="flexItem"><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+      
+      <h1>Springfield Live Weather Update</h1>
+  <p>The current temperature in Greenville is: <span id="current-temp"></span>&deg; F</p>
+  <p>The current weather condition is: <span id="description"></span></p>
+  <p>High Temp: <span id="highT"></span></p>   
+  <p>Low Temp: <span id="lowT"></span></p>
+  <p>Windspeed: <span id="windS"></span></p>
+  <p>Weather Icon: <img src="images/placeholder.png" alt="current weather" id="weather-icon"></p>      
+
+  <script src="js/springfield.js"></script>
+      
+    <section class="forecast">     
+      <h2>Forecast Details</h2>
+      <table style="width:100%">
+         <tr>
+           <th colspan="10">10 Day Forecast</th>
+          </tr> 
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+        </table>
+          
+      </section>  
+      
+             
+      <footer includefile="footer.html"></footer>
+
+      
+        
+        
+        <script src="js/include.js"></script>    
+        <script src="js/hamburger.js"></script>
+        <script src="js/currentdate.js">
+              dayName();
+              fullYear();
+              monthName();
+              numberDay();
+        </script>
+                     
+        
+ 
+    </body>
+</html>

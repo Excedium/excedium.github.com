@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-
-    <title>Weather Map</title>
-    <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" href="css/medium.css">
-        <link rel="stylesheet" href="css/large.css">
-    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
-
-  </head>
-
+  <head includefile="head.html">
+    
+    </head>
   <body>
 
-      <header><img src="images/sun-logo.jpg" alt="Sun Logo">
-  <h1>Ahead of the Storm</h1>
-  <h2>Don't Just Weather the Weather</h2>
+      <header includefile="header.html">
  </header>
 
   <nav class="clearfix">
@@ -24,8 +13,8 @@
     <ul id="primaryNav" class="hide">
     	<li class="flexItem"><a href="index.html" class="current">Home</a></li>
     	<li class="flexItem"><a href="franklin.html">Franklin</a></li>
-    	<li class="flexItem"><a href="#">Greenville</a></li>
-    	<li class="flexItem"><a href="#">Springfield</a></li>
+    	<li class="flexItem"><a href="greenville.html">Greenville</a></li>
+    	<li class="flexItem"><a href="springfield.html">Springfield</a></li>
     	<li class="flexItem"><a href="stormcenter.html">Storm Center</a></li>
     	<li class="flexItem"><a href="gallery.html">Gallery</a></li>
     </ul>
@@ -35,10 +24,10 @@
       
 
       <section>
-
+        <h1> </h1>
       </section>
       
-      <script src="js/data.js"></script>
+      
     
       
       <main>
@@ -54,19 +43,22 @@
     </main>  
     
       
+           
           <footer includefile="footer.html"></footer>
 
       
-        <script src="js/include.js"></script>
-        <script src="js/currentdate.js"></script>
+        
+        <script src="js/data.js"></script>
+        <script src="js/include.js"></script>    
         <script src="js/hamburger.js"></script>
-        <script src="js/windchill.js"></script>
-            <script>dayName();</script>
-            <script>fullYear();</script>
-            <script>monthName();</script>
-            <script>numberDay();</script>
-            <script>doInputOutput();</script>
-            
+        <script src="js/currentdate.js">
+              dayName();
+              fullYear();
+              monthName();
+              numberDay();
+        </script>
+                     
+        
+ 
     </body>
-    
 </html>

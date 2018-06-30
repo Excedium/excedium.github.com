@@ -15,11 +15,11 @@ var header = document.querySelector('header');
     
     function populateHeader(jsonObj) {
         var myH1 = document.createElement('h1');
-        myH1.textContent = "Towns";
-        header.appendChild(myH1);
+        myH1.textContent = "";
+        header.appendChild(myH1);}
 
     
-    }
+
           
         function showData(jsonObj) {
   var town = jsonObj['towns'];

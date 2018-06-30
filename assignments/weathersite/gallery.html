@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Ahead of the Storm - Don't Just Weather the Weather">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ahead of the Storm</title>
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<head includefile="head.html">
     
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" href="css/medium.css">
-        <link rel="stylesheet" href="css/large.css">
-</head>
+    </head>
 <body>
-    <header><h1>Ahead of the Storm</h1>
-  <h2>Don't Just Weather the Weather</h2>
-    </header>
+    <header includefile="header.html">
+ </header>
+
     
     <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
     	<li class="flexItem"><a href="index.html">Home</a></li>
     	<li class="flexItem"><a href="franklin.html">Franklin</a></li>
-    	<li class="flexItem"><a href="#">Greenville</a></li>
-    	<li class="flexItem"><a href="#">Springfield</a></li>
+    	<li class="flexItem"><a href="greenville.html">Greenville</a></li>
+    	<li class="flexItem"><a href="springfield.html">Springfield</a></li>
     	<li class="flexItem"><a href="stormcenter.html">Storm Center</a></li>
     	<li class="flexItem"><a href="gallery.html" class="current">Gallery</a></li>
     </ul>
@@ -46,28 +36,9 @@
         <div><img src="images/snowy.jpeg" alt="6"><p class="desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
     </div> 
     
-    <footer class="footercontainer">
-      <section>
-      <h3>Address</h3>
-      <p>Main St</p>
-      <p>New York, NY 10001</p>
-      </section>
-      
-      <section>
-      <h3>Phone</h3>
-      <p>(999)-999-9999</p>
-      <p></p>
-      </section>
-      
-      <section>
-      <h3>Email</h3>
-      <p>anyone@gmail.com</p>
-      <p></p>
-      </section>
-      
-            <p>&copy; <span id="dayname"></span>, <span id="numberday"></span> <span id="monthname"></span> <span id="year"></span> &#9675; All rights reserved</p>
-      <p>Wind Chill Factor is <span id="output"></span>&deg; Fahrenheit for today</p>
-    </footer>
+    <footer includefile="footer.html"></footer>
+    
+    <script src="js/include.js"></script>  
         <script src="js/currentdate.js"></script>
         <script src="js/hamburger.js"></script>
         <script src="js/windchill.js"></script>
