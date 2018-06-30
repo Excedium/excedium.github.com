@@ -1,0 +1,31 @@
+@media only screen and (min-width: 64em) {
+    
+    .desc:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+    
+    img:hover {box-shadow: 5px 5px 10px gray;}
+    
+    .photos {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        grid-row-gap: 1em;        
+    }
+    
+    nav button { display:none; }
+    
+    nav ul.hide {display: inline-flex;}
+    
+    nav ul {margin-left: 2%}
+    
+    nav ul li { }
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 1rem;
+    } 
+    
+
+section.forecast { display: inline flex;}
+}
