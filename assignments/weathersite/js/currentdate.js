@@ -1,30 +1,23 @@
- function dayName() {
-    var d = new Date();
-    var weekday = new Array(7);
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
+function getTodaysDate(date) {
+    var monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+  ];
+    var days = [
+      "Sunday", "Monday", "Tuesday", "Wednesday",
+      "Thursday", "Friday", "Saturday"
+  ];
 
-    var n = weekday[d.getDay()];
-    document.getElementById("dayname").innerHTML = n;
+    var weekday = date.getDay();
+    var day = date.getDate();
+    var monthIndex = date.getMonth();
+    var year = date.getFullYear();
+
+    return days[weekday] + ',' + String.fromCharCode(160) + day + String.fromCharCode(160) + monthNames[monthIndex] + String.fromCharCode(160) + year;
 }
 
-function fullYear() {
-    var d = new Date();
-    document.getElementById("year").innerHTML = d.getFullYear();
+function replaceDate() {
+    document.getElementById("currentdate").textContent = getTodaysDate(new Date());
 }
 
-function monthName() {
-	var d = new Date();
-       var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-       document.getElementById("monthname").innerHTML = months[d.getMonth()];
-}
-
-function numberDay() {
-	var d = new Date();
-	document.getElementById("numberday").innerHTML = d.getDate();
-}
+setTimeout(replaceDate, 50);
