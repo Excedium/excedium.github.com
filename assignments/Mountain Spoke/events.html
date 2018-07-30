@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head includefile="head.html">
+    
+    </head>
+  <body>
+
+      <header includefile="header.html">
+ </header>
+
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="flexItem"><a href="index.html" >Home</a></li>
+    	<li class="flexItem"><a href="adventureTours.html">Adventure Tours</a></li>
+    	<li class="flexItem"><a href="events.html" class="current">Events</a></li>
+    	<li class="flexItem"><a href="sales.html">Sales</a></li>
+    	<li class="flexItem"><a href="service.html">Services</a></li>
+    	<li class="flexItem"><a href="contact.html" >Contact Us</a></li>
+    </ul>
+  </nav>
+      
+      <main>
+          
+          <h1>
+          Cycle the Continental Divide
+          </h1>
+          
+          <p>Welcome to everything you need to know about our yearly held Continental Divide get-away.</p>
+          <p>This year we are celebrating the 10 year anniversary and the experience will reflect that.</p>
+          <p>This 2 week trek will commence in Canada and traverse the United States, culminating in Mexico.</p>
+          <p>Due to the popularity we have amassed dozens of sponsors which will help keep the costs down.</p>
+          <p>Along with it being televised, this will be a journey you will never forget</p>
+          <p>The price if, you bring all your own equipment, is only $1,000</p>
+          <p>We have kits for those who want to use our equipment that will come with warranties and insurance.</p>
+          <p>We will be holding this event on the first week of September to keep those temperatures manageable.</p>
+          <p>And last but not least. As per usual, for those who place in the top 10 will receive a voucher for next year that will pay for it all!</p><br>
+          
+      
+      <fieldset>
+      <h1>Register for the Continental Divide Below!</h1>
+         <br>
+         <form method="get" action="thanks.html">
+           
+            
+    <label class="top">First name*<br>
+            <input type="text" name="firstname" required></label><br><br>
+    <label class="top">Last name*<br>
+        <input type="text" name="lastname" required></label><br><br>
+    <label class="top">E-Mail*<br>
+            <input type="email" name="email" placeholder="anyone@gmail.com" required></label><br><br>
+    <label class="top">Phone number*<br>
+            <input type="tel" name="phone" placeholder="1234567891" required></label><br><br>
+    <label class="top">Date of Birth*<br>
+            <input type="date" name="dob" required></label><br><br>
+    <label class="top">Home State<br>
+            <select required>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>				</label><br><br>
+                 
+             
+    <label class="top">Special Accommodations/comments<br>
+             <textarea name="message" rows="10" cols="30"></textarea></label>    
+             
+    
+    <br><br>
+    <input type="submit" value="Adventure Time!" class="submitBtn">
+              
+
+        </form> 
+      </fieldset>
+      </main>
+      
+      
+      
+      <footer includefile="footer.html"></footer>      
+        
+        <script src="js/data.js"></script>
+        <script src="js/include.js"></script>    
+        <script src="js/hamburger.js"></script>
+        <script src="js/currentdate.js"></script>
+                    <script>dayName();
+fullYear();
+monthName();
+numberDay();
+ </script>
+    </body>
+</html>

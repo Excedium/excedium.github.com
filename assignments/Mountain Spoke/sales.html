@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head includefile="head.html">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($){
+        
+        // Hide all panels to start
+        var panels = $('.accordion > dd').hide();
+        
+        
+        
+        // On click of panel title
+        $('.accordion > dt > a').click(function() {
+          var $this = $(this);
+          
+          // Slide up all other panels
+          panels.slideUp();
+          
+          //Slide down target panel
+          $this.parent().next().slideDown();
+          
+          return false;
+        });
+      });
+    </script>
+    </head>
+  <body>
+
+      <header includefile="header.html">
+          
+ </header>
+
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="flexItem"><a href="index.html" class="current">Home</a></li>
+    	<li class="flexItem"><a href="adventureTours.html">Adventure Tours</a></li>
+    	<li class="flexItem"><a href="events.html">Events</a></li>
+    	<li class="flexItem"><a href="sales.html">Sales</a></li>
+    	<li class="flexItem"><a href="service.html">Services</a></li>
+    	<li class="flexItem"><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+    
+
+	<h2>Bikes for Sale</h2>
+
+
+<dl class="accordion">
+       
+    <dt><a href="">Bike 1 - Novice</a></dt>
+        
+    <dd><img src="images/novice.jpg" alt="bike1"><br>
+    <h2>Giant ATX 2 (2018)</h2><br>
+    
+    <br>
+        Climb steep city streets or explore forest trails. This versatile bike is at home in any environment.
+
+Closely related to Giant XC and trail bikes, the ATX features the familiar flat-handlebar and 100mm suspension fork of a traditional XC mountain bike. A lightweight ALUXX aluminum frame, engineered with comfortable geometry for challenging terrain, adds to its rugged personality. The ATX also features size-specific wheel diameters—smaller size bikes use 26-inch wheels, while larger sizes use 27.5. This tailors the bike’s handling to every rider’s size and height. Powerful disc brake technology gives you confident handling no matter the weather or riding conditions. And integrated mounts let you easily add racks or fenders to suit your riding adventures.<br><br>
+
+<strong>Features</strong><br>
+
+&#9675; ALUXX-grade butted aluminum frame<br>
+&#9675; SR Suntour XCT 100mm-travel fork<br>
+&#9675; Giant GX28 alloy double-wall rims with Giant Quickcross tires<br>
+&#9675; Shimano 3x7-speed drivetrain with Tektro mechanical disc brakes<br><br>
+    Please Call for Customization and Pricing<br><br>
+
+       </dd>
+    
+
+<dt><a href="">Bike 2 - Intermediate</a></dt>
+    
+    <dd><img src="images/intermediate.jpg" alt="bike2"><br>
+    <h2>Diamondback Atroz 3 (2018)</h2><br>
+    
+    
+      
+  With the Atroz 3, we took the proven and refined single-pivot full-suspension design and upped the ante in a big way. It’s a full RockShox affair when it comes to suspension, including the five-inch travel Recon RL air-sprung fork with 32mm stanchions and a quick release thru-axle. Likewise, we outfitted this model with SRAM’s NX 11-speed drivetrain — all the simplicity and durability of a single-ring drivetrain, with the low gearing you once needed a front derailleur to obtain. Shimano hydraulic disc brakes provide plenty of stopping power (particularly with 180mm rotors, front and rear), and we finished the bike off with a Race Face Chester bar and stem combo. Ready Ride bikes are shipped 95 percent assembled. Typical bike assembly is time-consuming and requires technical know-how. Ready Ride reduces the time and skills needed for the final, four-step assembly.<br><br>
+  Please Call for Customization and Pricing<br><br>  
+    </dd>
+
+
+<dt><a href="">Bike 3 - Advanced</a></dt>
+    <dd><img src="images/advanced.jpg"><br>
+    <h2>Niner Sir 9 1-Star</h2><br>
+    
+    
+    
+      
+  Take charge of your ride with this Reynolds 853 Steel frame designed around Niner's [R]evolution trail geometry which begs the rider to push their limits. Ride it hard. Ride it fast. After all, it's made from a truly time-tested material that's been air hardened and heat treated. The efficient, yet compliant ride quality of the SIR 9 harkens back to a simpler time. A time without linkages and complicated shock settings. A time where all the energy you put into the pedals moves you forward.<br><br>
+    <strong>Features</strong><br>
+    &#9675; Redesigned bottom bracket and chainstay junction: Keeping ride quality in mind as well as tire clearance, we went to great lengths to design this crucial frame junction. The PF 30 Bottom Bracket allows you to run a standard press fit bottom bracket or, if simplicity is your thing, throw in an eccentric bottom bracket and run singlespeed. A hidden plate inside the chainstay yoke stiffens and strengthens in order to improve power transfer.<br>
+    &#9675; Multiple mounting options: Pack it in, pack it out: Eighteen. As in 18 mounting points allow you to run racks and fenders, a bento box, water bottles, etc. This frame is versatile.<br>
+    &#9675; Niner's [R]evolution trail geometry: Our trail geo puts the rider in the sweet, balanced spot on the bike. Longer top tube, slacker headtube and shorter chainstays all mean more fun and better handling. <br><br>
+    Please Call for Customization and Pricing<br><br>
+      </dd>
+</dl>
+
+    
+
+     <footer includefile="footer.html"></footer>
+      
+        
+        <script src="js/data.js"></script>
+        <script src="js/include.js"></script>    
+        <script src="js/hamburger.js"></script>
+        <script src="js/currentdate.js"></script>
+                    <script>dayName();
+fullYear();
+monthName();
+numberDay();
+ 
+
+    
+</body>
+</html>

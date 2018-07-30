@@ -12,19 +12,19 @@ th, td {
     text-align: center;    
 }
 
-body {
+body { background-color: azure;
   font-size: 16px;
   padding: 10px;    
   font-family: 'Open Sans', sans-serif;
       }
 
+header { max-width: 60%;}
 
+nav, main, footer { max-width: 100%; }
 
-header {   max-width: 100%; 
-            background-color: greenyellow; }
-
+header {            }
 header h1 { font-size: 40px; }
-header img { width: 20%; }
+header img { width: 100%; }
 header .subheading { font-size: 20px; }
 
 nav button {
@@ -32,11 +32,11 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: #555;
+    color: black;
 }
 
-nav {max-width: 100% ;
-    background-color: #ccc;
+nav {
+    background-color: brown;
     font-family: Verdana, sans-serif;
     }
 
@@ -44,7 +44,7 @@ nav ul {list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;}
+            background-color: orangered;}
 
 .hide { display: inline-flex;
         flex-direction: row;
@@ -68,7 +68,7 @@ nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 nav ul.hide {display: none;}
 
 a.current:link {
-                background-color: black;
+                background-color: darkgoldenrod;
                 
 }
 
@@ -79,7 +79,7 @@ a.current:link {
   clear: both;
 }
 
-section.forecast {display: none;}
+
 
 main {
     padding: 0;
@@ -102,8 +102,15 @@ form label.top textarea {
     
 }
 
-    
-main h2 {}
+
+
+
+
+
+main h1 {background-color: gray;
+            font-size: 50px;
+}    
+main h2 { background-color: lightgray}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure.hero {width: 100%; margin: 0;}
 main figure.hero img {width: 100%;}
@@ -119,7 +126,7 @@ footer {
         flex-direction: column;
         color: white;
         text-align: center;
-        padding: 0 0;
+        padding: 5px;
         text-decoration: none;
-        background-color: gray;
+        background-color: brown;
 }

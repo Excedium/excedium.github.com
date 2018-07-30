@@ -1,0 +1,13 @@
+@media only screen and (min-width: 20em) {
+    
+    .photos {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        grid-row-gap: 1em;
+    }
+    
+    
+    
+
+    
+  }
